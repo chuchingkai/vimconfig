@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'rosenfeld/conque-term'
+Plugin 'tpope/vim-fugitive'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
