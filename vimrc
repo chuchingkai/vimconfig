@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'rosenfeld/conque-term'
 Plugin 'tpope/vim-fugitive'
+Plugin 'taglist.vim'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -453,3 +454,8 @@ let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => taglist
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>mm TlistToggle<cr>
