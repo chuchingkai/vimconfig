@@ -259,7 +259,6 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
-map <leader>t  :ConqueTerm /bin/bash<cr>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -458,4 +457,12 @@ map <leader>nf :NERDTreeFind<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => taglist
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>mm TlistToggle<cr>
+let Tlist_WinWidth = 50
+let Tlist_Use_Right_Window = 1
+map <leader>bb :TlistOpen<cr>
+map <leader>mm :TlistToggle<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ConqueTerm
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>t  :ConqueTermVSplit /bin/bash<cr>
