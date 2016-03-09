@@ -459,10 +459,10 @@ map <leader>nf :NERDTreeFind<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let Tlist_WinWidth = 50
 let Tlist_Use_Right_Window = 1
-map <leader>bb :TlistOpen<cr>
 map <leader>mm :TlistToggle<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ConqueTerm
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>t  :ConqueTermVSplit /bin/bash<cr>
+map <leader>t :ConqueTerm /bin/bash<cr>
+map <leader>e :ConqueTermVSplit /bin/bash<cr>
