@@ -459,7 +459,8 @@ map <leader>nf :NERDTreeFind<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let Tlist_WinWidth = 50
 let Tlist_Use_Right_Window = 1
-map <leader>mm :TlistToggle<cr>
+map <leader>mm :TlistOpen<cr>
+map <leader>hh :TlistToggle<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ConqueTerm
