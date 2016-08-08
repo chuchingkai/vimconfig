@@ -16,6 +16,30 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/taglist.vim"]
-	path = bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/c.vim"]
+	path = bundle/c.vim
+	url = git@github.com:vim-scripts/c.vim.git
+[submodule "bundle/OmniCppComplete"]
+	path = bundle/OmniCppComplete
+	url = git@github.com:vim-scripts/OmniCppComplete.git
+[submodule "bundle/vim-orgmode"]
+	path = bundle/vim-orgmode
+	url = git@github.com:jceb/vim-orgmode.git
+[submodule "bundle/speeddating.vim"]
+	path = bundle/speeddating.vim
+	url = git@github.com:vim-scripts/speeddating.vim.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git
+[submodule "bundle/utl.vim"]
+	path = bundle/utl.vim
+	url = git@github.com:vim-scripts/utl.vim.git
+[submodule "bundle/calendar.vim--Matsumoto"]
+	path = bundle/calendar.vim--Matsumoto
+	url = git@github.com:vim-scripts/calendar.vim--Matsumoto.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "bundle/bash-support.vim"]
+	path = bundle/bash-support.vim
+	url = git@github.com:vim-scripts/bash-support.vim.git

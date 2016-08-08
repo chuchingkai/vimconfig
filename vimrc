@@ -10,7 +10,18 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'rosenfeld/conque-term'
 Plugin 'tpope/vim-fugitive'
-Plugin 'taglist.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/bash-support.vim'
+Plugin 'vim-scripts/c.vim'
+Plugin 'OmniCppComplete'
+
+" plugin for vim-orgmode
+Plugin 'jceb/vim-orgmode'
+" plugin required by vim-orgmode
+Plugin 'vim-scripts/speeddating.vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'vim-scripts/utl.vim'
+Plugin 'vim-scripts/calendar.vim--Matsumoto'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -455,12 +466,14 @@ map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => taglist
+" => tagbar
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let Tlist_WinWidth = 50
-let Tlist_Use_Right_Window = 1
-map <leader>mm :TlistOpen<cr>
-map <leader>hh :TlistToggle<cr>
+let g:tagbar_width=30
+let g:tagbar_ctags_bin='ctags'
+nmap <Leader>tb :TagbarToggle<CR>
+map <F3> :Tagbar<CR>
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+"if filetype c then tagbar autostart
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ConqueTerm
