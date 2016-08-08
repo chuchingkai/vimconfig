@@ -7,7 +7,6 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'rosenfeld/conque-term'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
@@ -17,7 +16,6 @@ Plugin 'OmniCppComplete'
 
 " plugin for vim-orgmode
 Plugin 'jceb/vim-orgmode'
-" plugin required by vim-orgmode
 Plugin 'vim-scripts/speeddating.vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-scripts/utl.vim'
@@ -72,7 +70,7 @@ filetype off                  " required
 "    -> Text, tab and indent related
 "    -> Visual mode related
 "    -> Moving around, tabs and buffers
-"    -> Status line
+"    -> Status line / Powerline
 "    -> Editing mappings
 "    -> vimgrep searching and cope displaying
 "    -> Spell checking
@@ -123,6 +121,9 @@ nmap <Leader><Leader> V
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show cursorline
+set cursorline cursorcolumn
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -297,10 +298,14 @@ set viminfo^=%
 
 
 """"""""""""""""""""""""""""""
-" => Status line
+" => Status line / Powerline
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
+set t_Co=256
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
