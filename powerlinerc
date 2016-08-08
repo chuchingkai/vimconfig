@@ -1,0 +1,30 @@
+# Install powerline manually
+
+## install via pip
+pip install --user powerline-status
+
+## install font for powerline
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+
+## font configuration
+Choose a powerline font for your terminal
+pip show powerline-status to see your powerline.sh url
+
+### adding this to your bashrc
+POWERLINE_SCRIPT=/usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+if [ -f $POWERLINE_SCRIPT ]; then
+    source $POWERLINE_SCRIPT
+fi
+
+then re-login/reboot
+
+## config powerline for vim
+
+### adding this to vimrc (already added)
+set laststatus=2
+set t_Co=256
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
