@@ -457,13 +457,14 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark 
-map <leader>nf :NERDTreeFind<cr>
+map <leader>nn :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
+map <leader>nb :NERDTreeFromBookmark<CR>
+map <leader>nf :NERDTreeFind<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tagbar
@@ -478,5 +479,5 @@ autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ConqueTerm
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>t :ConqueTerm /bin/bash<cr>
-map <leader>e :ConqueTermVSplit /bin/bash<cr>
+map <leader>t :ConqueTerm /bin/bash<CR>
+map <leader>e :ConqueTermVSplit /bin/bash<CR>
