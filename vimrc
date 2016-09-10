@@ -12,7 +12,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/bash-support.vim'
 Plugin 'vim-scripts/c.vim'
-Plugin 'OmniCppComplete'
+Plugin 'Valloric/YouCompleteMe'
 
 " plugin for vim-orgmode
 Plugin 'jceb/vim-orgmode'
@@ -488,3 +488,8 @@ autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>t :ConqueTerm /bin/bash<CR>
 map <leader>e :ConqueTermVSplit /bin/bash<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => YouCompleteMe
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'

@@ -34,3 +34,6 @@
 [submodule "bundle/bash-support.vim"]
 	path = bundle/bash-support.vim
 	url = git@github.com:vim-scripts/bash-support.vim.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
