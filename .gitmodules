@@ -1,6 +1,3 @@
-[submodule "bunble/nerdtree"]
-	path = bunble/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -16,9 +13,6 @@
 [submodule "bundle/c.vim"]
 	path = bundle/c.vim
 	url = git@github.com:vim-scripts/c.vim.git
-[submodule "bundle/OmniCppComplete"]
-	path = bundle/OmniCppComplete
-	url = git@github.com:vim-scripts/OmniCppComplete.git
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = git@github.com:jceb/vim-orgmode.git
