@@ -37,6 +37,7 @@
     git submoudle add URL
     # not sure for this step:
     git submodule update --init --recursive -- bundle/path_to_it
+    modify vimrc
 
 ##Remove a submoudle of plugin
 
