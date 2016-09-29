@@ -13,6 +13,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/bash-support.vim'
 Plugin 'vim-scripts/c.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'klen/python-mode'
 
 " plugin for vim-orgmode
 Plugin 'jceb/vim-orgmode'
