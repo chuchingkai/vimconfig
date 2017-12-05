@@ -14,6 +14,7 @@ Plugin 'vim-scripts/bash-support.vim'
 Plugin 'vim-scripts/c.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " plugin for vim-orgmode
 Plugin 'jceb/vim-orgmode'
@@ -183,8 +184,8 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
 set background=dark
+colorscheme PaperColor
 
 " Set extra options when running in GUI mode
 if has("gui_running")
